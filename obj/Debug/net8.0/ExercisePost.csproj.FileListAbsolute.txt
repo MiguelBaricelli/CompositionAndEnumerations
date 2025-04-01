@@ -1,0 +1,14 @@
+C:\temp\ws-vs2022\Primeiro\ExercisePost\obj\Debug\net8.0\ExercisePost.GeneratedMSBuildEditorConfig.editorconfig
+C:\temp\ws-vs2022\Primeiro\ExercisePost\obj\Debug\net8.0\ExercisePost.AssemblyInfoInputs.cache
+C:\temp\ws-vs2022\Primeiro\ExercisePost\obj\Debug\net8.0\ExercisePost.AssemblyInfo.cs
+C:\temp\ws-vs2022\Primeiro\ExercisePost\obj\Debug\net8.0\ExercisePost.csproj.CoreCompileInputs.cache
+C:\temp\ws-vs2022\Primeiro\ExercisePost\bin\Debug\net8.0\ExercisePost.exe
+C:\temp\ws-vs2022\Primeiro\ExercisePost\bin\Debug\net8.0\ExercisePost.deps.json
+C:\temp\ws-vs2022\Primeiro\ExercisePost\bin\Debug\net8.0\ExercisePost.runtimeconfig.json
+C:\temp\ws-vs2022\Primeiro\ExercisePost\bin\Debug\net8.0\ExercisePost.dll
+C:\temp\ws-vs2022\Primeiro\ExercisePost\bin\Debug\net8.0\ExercisePost.pdb
+C:\temp\ws-vs2022\Primeiro\ExercisePost\obj\Debug\net8.0\ExercisePost.dll
+C:\temp\ws-vs2022\Primeiro\ExercisePost\obj\Debug\net8.0\refint\ExercisePost.dll
+C:\temp\ws-vs2022\Primeiro\ExercisePost\obj\Debug\net8.0\ExercisePost.pdb
+C:\temp\ws-vs2022\Primeiro\ExercisePost\obj\Debug\net8.0\ExercisePost.genruntimeconfig.cache
+C:\temp\ws-vs2022\Primeiro\ExercisePost\obj\Debug\net8.0\ref\ExercisePost.dll
