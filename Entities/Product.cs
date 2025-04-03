@@ -13,6 +13,8 @@ namespace ExercisePost.Entities
 
         public Product() { }
 
+       
+
         public Product(string name, double price)
         {
             Name = name;

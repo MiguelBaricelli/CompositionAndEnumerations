@@ -12,3 +12,4 @@ C:\temp\ws-vs2022\Primeiro\ExercisePost\obj\Debug\net8.0\refint\ExercisePost.dll
 C:\temp\ws-vs2022\Primeiro\ExercisePost\obj\Debug\net8.0\ExercisePost.pdb
 C:\temp\ws-vs2022\Primeiro\ExercisePost\obj\Debug\net8.0\ExercisePost.genruntimeconfig.cache
 C:\temp\ws-vs2022\Primeiro\ExercisePost\obj\Debug\net8.0\ref\ExercisePost.dll
+C:\temp\ws-vs2022\Primeiro\ExercisePost\obj\Debug\net8.0\ExercisePost.sourcelink.json

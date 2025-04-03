@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Globalization;
+using ExercisePost.Entities;
 
 namespace ExercisePost.Entities
 {
@@ -12,16 +14,17 @@ namespace ExercisePost.Entities
 
         public OrderStatus Status { get; set; }
 
-        public double FinalPrice { get; set; }
+        public Client Client { get; set; }
 
         List<OrderItem> Items { get; set; } = new List<OrderItem>();
 
         public Order() { }
 
-        public Order(DateTime moment, OrderStatus status)
+        public Order(DateTime moment, OrderStatus status, Client client)
         {
             Moment = moment;
             Status = status;
+            Client = client;
         }
 
         public void AddItem(OrderItem item)
@@ -37,33 +40,33 @@ namespace ExercisePost.Entities
        
         public double Total()
         {
-            OrderItem orderItem = new OrderItem();
-            double subtotal = orderItem.SubTotal();
+           
+              double sum = 0.0;
 
             foreach (OrderItem item in Items)
             {
-             
-                subtotal += FinalPrice;
+                sum += item.SubTotal();
             }
-            return FinalPrice;
+            return sum;
         }
 
 
-        Client client = new Client();
+        
        
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
             Console.WriteLine("ORDER SUMMARY");
-            sb.Append("Order Moment: " + Moment.ToString());
+            sb.AppendLine("Order Moment: " + Moment.ToString());
             sb.AppendLine("Order Status: " + Status);
-            sb.AppendLine("Client: " + client.Name + " " +client.BirthDate + " " + client.Email);
+            sb.AppendLine("Client: " + Client);
 
             foreach (var item in Items)
             {
-                sb.AppendLine($"Name: {item.Product.Name}, R${item.Product.Price:F2}, Quantity: {item.Quantity}, SubTotal: R${item.SubTotal():F2}");
+                sb.AppendLine($"R$ {item.Price:F2}, Quantity: {item.Quantity}, SubTotal: R${item.SubTotal():F2}");
+                sb.AppendLine(item.ToString());
             }
-            sb.Append("Total Price" + Total());
+            sb.Append("Total Price: " + Total().ToString("F2", CultureInfo.InvariantCulture));
             return sb.ToString();
 
         }

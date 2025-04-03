@@ -6,27 +6,25 @@ using System.Threading.Tasks;
 
 namespace ExercisePost.Entities
 {
-     class OrderItem
+     class OrderItem : Product
     {
         public int Quantity { get; set; }
 
-        public Product Product { get; set; }
+       
 
-
-        
 
         public OrderItem() { }
 
-        public OrderItem(int quantity, Product price) {
+        public OrderItem(int quantity, double price) {
 
             this.Quantity = quantity;
-            this.Product = price;
+            this.Price = price;
         }
 
         public double SubTotal()
         {
             
-            return this.Quantity * this.Product.Price;
+            return this.Quantity * this.Price;
         }
     }
 }
